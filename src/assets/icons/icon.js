@@ -13,6 +13,7 @@ import cog from "./bxs-cog.svg";
 import questionMark from "./bx-question-mark.svg";
 import mobile from "./bx-mobile-landscape.svg";
 import building from "./bx-building.svg";
+import search from "./bx-search-alt-2.svg";
 
 export {
   heart,
@@ -30,4 +31,5 @@ export {
   questionMark,
   mobile,
   building,
+  search,
 };

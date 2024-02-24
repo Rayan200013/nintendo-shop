@@ -1,9 +1,10 @@
 import React from "react";
+import SectionTwo from "../../components/SectionTwo";
 
 export const Shop = () => {
   return (
     <>
-      <h1>This is home shop page</h1>
+      <SectionTwo />
     </>
   );
 };

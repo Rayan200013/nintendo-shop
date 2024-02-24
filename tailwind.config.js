@@ -10,6 +10,7 @@ module.exports = {
         blue: "#0b2b6b",
         light: "#efefef",
         heavy: "#434242",
+        blacky: "#000",
       },
       fontFamily: {
         sans: [
@@ -30,12 +31,12 @@ module.exports = {
         lg: "18px",
         xl: "20px",
         xxl: "30px",
+        smr: "0.75rem",
       },
       fontWeight: {
         normal: 400,
         medium: 500,
         bold: 700,
-        // Add more font weights as needed
       },
       container: {
         sm: "640px",
