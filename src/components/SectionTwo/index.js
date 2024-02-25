@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
+import { images } from "../../assets//images/image";
+import CtaButton from "../ctabutton";
 
 const SectionTwo = () => {
   const [isReadMore, setIsReadMore] = useState(false);
@@ -14,13 +16,13 @@ const SectionTwo = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Left Column */}
-          <div className="lg:w-1/2 mx-6 my-6">
-            <h2 className="text-3xl font-bold mb-4">
+          <div className="lg:w-1/2 mx-8 mb-20">
+            <h2 className="text-xlg text-heavy font-sans font-bold line-height-tight mb-4">
               You're moving to the valley...
             </h2>
             <div className="mb-4">
               <div>
-                <p>
+                <p className="font-sans font-regular text-heavy text-base line-height-snug">
                   You’ve inherited your grandfather’s old farm plot in Stardew
                   Valley. Armed with hand-me-down tools and a few coins, you set
                   out to begin your new life. Can you learn to live off the land
@@ -45,7 +47,7 @@ const SectionTwo = () => {
                 )}
               </div>
               <button
-                className="text-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-flex items-center mt-4"
+                className="text-primary hover:text-primaryHover text-primary font-bold py-2 px-4 rounded inline-flex items-center mt-4"
                 onClick={toggleReadMore}
               >
                 <FontAwesomeIcon
@@ -56,14 +58,17 @@ const SectionTwo = () => {
               </button>
               <p>Software description provided by the publisher.</p>
             </div>
-            <button className="bg-primary hover:bg-primary text-white font-bold py-2 px-4 rounded inline-flex items-center">
+            {/* <button className="bg-primary hover:bg-primary text-white font-bold py-5 px-6 rounded-full inline-flex items-center">
               Explore this game's official website
-            </button>
+            </button> */}
+            <CtaButton padding="large">
+              Explore this game's official website
+            </CtaButton>
           </div>
           {/* Right Column */}
-          <div className="lg:w-1/2 mt-8 lg:mt-0 ">
+          <div className="lg:w-1/2  lg:mt-0 mx-8 mb-20">
             <img
-              src="https://via.placeholder.com/400"
+              src={images.stardew}
               alt="Placeholder"
               className="rounded-lg"
             />

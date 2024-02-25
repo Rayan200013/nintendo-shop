@@ -1,0 +1,46 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cta-button {
+  padding: 10px 10px;
+  border-radius: 15px;
+  background-color: rgb(230, 0, 18);
+  border: 2px solid #e60012;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ac000d;
+  border-color: rgb(172, 0, 13);
+  animation: pulse 0.5s;
+}
+
+.cta-button-padding-small {
+  padding: 5px 10px;
+}
+
+.cta-button-padding-regular {
+  padding: 10px 20px;
+}
+
+.cta-button-padding-large {
+  padding: 15px 30px;
+}
+
+.cta-button-css {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: sans-serif;
+}

@@ -121,7 +121,7 @@ export function Header() {
             className="flex items-center text-gray-600 hover:text-primary"
           >
             {/* <img src={cart} alt="Cart" className="h-6 w-6" /> */}
-            <i class="fa-solid fa-cart-shopping  h-5 w-6 text-xl"></i>
+            <i class="fa-solid fa-cart-shopping  h-5 w-6 text-xxl"></i>
             <span className="ml-1 font-sans text-base  font-bold">Cart</span>
           </Link>
           <Link
