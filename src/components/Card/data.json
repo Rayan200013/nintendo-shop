@@ -1,0 +1,26 @@
+[
+  {
+    "image": "image-url.jpg",
+    "title": "Title of the Card",
+    "date": "February 24, 2024",
+    "freeDemo": true,
+    "salesEnd": null,
+    "price": "$19.99",
+    "originalPrice": "$29.99",
+    "salePercentage": "30",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "favorite": true
+  },
+  {
+    "image": "another-image-url.jpg",
+    "title": "Another Card",
+    "date": "March 10, 2024",
+    "freeDemo": false,
+    "salesEnd": 5,
+    "price": "$9.99",
+    "originalPrice": "$14.99",
+    "salePercentage": "25",
+    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "favorite": false
+  }
+]

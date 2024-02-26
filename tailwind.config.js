@@ -28,6 +28,7 @@ module.exports = {
         serif: ["Georgia", "Cambria", "Times New Roman", "serif"],
       },
       fontSize: {
+        xxsm: "10px",
         xsm: "12px",
         sm: "14px",
         base: "16px",
@@ -35,6 +36,8 @@ module.exports = {
         xl: "20px",
         xlg: "21px",
         xxl: "30px",
+        xxxl: "40px",
+        xxxxl: "50px",
         smr: "0.75rem",
         baseR: "1rem",
         lgr: "1.3125rem",

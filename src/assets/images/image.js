@@ -9,6 +9,7 @@ import stardew from "./Stardew_Valley-banner.png";
 import nintendo from "./nintendo-switch.png";
 import consoleStation from "./console-station.png";
 import nintendoFooter from "./nintendo-footer.png";
+import esrb from "./esrb-privacy.png";
 
 export const images = {
   logo,
@@ -22,4 +23,5 @@ export const images = {
   nintendo,
   consoleStation,
   nintendoFooter,
+  esrb,
 };
