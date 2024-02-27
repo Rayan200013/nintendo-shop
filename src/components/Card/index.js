@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ data }) => {
   return (
-    <div className="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
+    <div className="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out hover:cursor-pointer">
       <img className="w-full" src={data.image} alt={data.title} />
       <div className="p-4">
         <h2 className="text-xl font-semibold mb-2">{data.title}</h2>
@@ -18,28 +18,10 @@ const Card = ({ data }) => {
             <p className="text-gray-600">Sales end: {data.saleEnd} days</p>
           )}
         </div>
-        <div className="flex items-center mb-4">
-          <div className="border-l-2 pl-2">
-            <p>{data.text}</p>
-          </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 ml-4 text-red-500"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M12 4c-4 0-7 3-7 7 0 5 7 10 7 10s7-5 7-10c0-4-3-7-7-7z"
-            />
-          </svg>
-        </div>
-        <div className="flex justify-between">
-          <div>
-            <p className="text-lg font-semibold">{data.price}</p>
+
+        <div className="flex justify-between pb-3">
+          <div className="flex">
+            <p className="text-lg font-semibold pr-2">{data.price}</p>
             {data.originalPrice && (
               <p className="text-gray-500 line-through">{data.originalPrice}</p>
             )}
@@ -49,6 +31,14 @@ const Card = ({ data }) => {
               {data.salePercentage}% off
             </p>
           )}
+        </div>
+
+        <div className="flex items-center justify-between mb-4">
+          <div className="border-l-2 pl-2 border-primary">
+            <p>{data.text}</p>
+          </div>
+
+          <i class="fa-regular fa-heart text-xl text-primary hover:text-primaryHover hover:cursor-pointer"></i>
         </div>
       </div>
     </div>

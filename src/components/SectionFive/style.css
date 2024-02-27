@@ -1,0 +1,38 @@
+.slick-arrow {
+  background: #fff;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 30px;
+  height: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in;
+}
+.slick-arrow:hover {
+  background-color: #bcbcbc;
+}
+
+.slick-prev {
+  left: -4px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+@media (max-width: 776px) {
+  .slick-prev {
+    left: -30px;
+  }
+  .slick-next {
+    right: -30px;
+  }
+  .slick-arrow {
+    height: 430px;
+  }
+  .slick-dots {
+    bottom: -40px !important;
+  }
+}

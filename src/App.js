@@ -7,6 +7,7 @@ import { Shop } from "./pages/Shop";
 import { NotFound } from "./pages/NotFound";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <Router>
