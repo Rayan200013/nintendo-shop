@@ -10,7 +10,7 @@ import {
 } from "../../assets/icons/icon";
 import { images } from "../../assets/images/image";
 import { Link } from "react-router-dom";
-import Announcment from "../Announcments";
+import Announcement from "../Announcements";
 
 export function Header() {
   const [showCategories, setShowCategories] = useState(false);
@@ -156,7 +156,7 @@ export function Header() {
           {/* this is the Secondary Menu End */}
         </div>
       </div>
-      <Announcment />
+      <Announcement />
     </>
   );
 }

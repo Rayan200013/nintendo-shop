@@ -1,26 +1,62 @@
 [
   {
-    "image": "image-url.jpg",
-    "title": "Title of the Card",
-    "date": "February 24, 2024",
-    "freeDemo": true,
-    "salesEnd": null,
+    "image": "https://via.placeholder.com/400x300",
+    "title": "Card 1",
+    "date": "February 26, 2024",
+    "space": "Some space for bigger titles if needed",
+    "buttonText": "Free Demo",
+    "saleEnd": 5,
+    "text": "Some text with a border-left",
     "price": "$19.99",
     "originalPrice": "$29.99",
-    "salePercentage": "30",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    "favorite": true
+    "salePercentage": "30"
   },
   {
-    "image": "another-image-url.jpg",
-    "title": "Another Card",
-    "date": "March 10, 2024",
-    "freeDemo": false,
-    "salesEnd": 5,
+    "image": "https://via.placeholder.com/400x300",
+    "title": "Card 2",
+    "date": "February 27, 2024",
+    "space": "Another space for a title",
+    "buttonText": "Buy Now",
+    "saleEnd": 3,
+    "text": "Some more text with a border-left",
+    "price": "$24.99",
+    "originalPrice": "$39.99",
+    "salePercentage": "35"
+  },
+  {
+    "image": "https://via.placeholder.com/400x300",
+    "title": "Card 3",
+    "date": "February 28, 2024",
+    "space": "Yet another space for a title",
+    "buttonText": "Explore",
+    "saleEnd": 8,
+    "text": "More text with a border-left",
+    "price": "$14.99",
+    "originalPrice": "$19.99",
+    "salePercentage": "25"
+  },
+  {
+    "image": "https://via.placeholder.com/400x300",
+    "title": "Card 4",
+    "date": "March 1, 2024",
+    "space": "Space for a title",
+    "buttonText": "Discover",
+    "saleEnd": 2,
+    "text": "Even more text with a border-left",
     "price": "$9.99",
     "originalPrice": "$14.99",
-    "salePercentage": "25",
-    "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    "favorite": false
+    "salePercentage": "30"
+  },
+  {
+    "image": "https://via.placeholder.com/400x300",
+    "title": "Card 5",
+    "date": "March 2, 2024",
+    "space": "Last space for a title",
+    "buttonText": "Get Started",
+    "saleEnd": 4,
+    "text": "Final text with a border-left",
+    "price": "$29.99",
+    "originalPrice": "$49.99",
+    "salePercentage": "40"
   }
 ]
