@@ -8,13 +8,13 @@ import AbstractCards from "../AbstractCards/index.js";
 
 const SectionOne = () => {
   return (
-    <section className="bg-primary pt-12 pb-20">
-      <div className="container mx-auto  p-12 bg-white">
+    <section className="bg-teal-100 pt-12 pb-20 height-700 " id="SectionOne">
+      <div className="container mx-auto  p-12 bg-white rounded-2xl shadow-xl mb-0 mobile:mb-12">
         <div className="lg:flex">
           {/* Left Column */}
-          <div className="lg:w-1/2 mx-auto lg:mx-0 lg:pr-8">
+          <div className="lg:w-3/5 mx-auto lg:mx-0 lg:pr-2">
             {/* Breadcrumb */}
-            <p className="text-gray-500 text-sm">
+            <p className="text-gray-500 text-sm pb-4">
               Store > Games > Stardew Valley
             </p>
             {/* Picture */}
@@ -28,10 +28,14 @@ const SectionOne = () => {
             <div>
               <Link
                 to="#"
-                className="flex flex-col lg:flex-row items-center bg-white rounded my-6 mx-6 "
+                className="flex flex-col lg:flex-row items-center bg-white rounded mt-12  "
               >
-                <div className="lg:w-1/4 mx-auto px-5 py-8">
-                  <img src={images.stardew} alt="ESRB Rating" />
+                <div className="lg:w-1/4 mx-auto px-5 py-8 ">
+                  <img
+                    src={images.esrbEveryone}
+                    alt="ESRB Rating"
+                    className="w-16"
+                  />
                 </div>
                 <div className="lg:w-3/4 mx-auto pr-8">
                   <p className="font-sans text-xsm pb-1 border-b border-blacky">
@@ -48,7 +52,7 @@ const SectionOne = () => {
           </div>
 
           {/* Right Column */}
-          <div className="lg:w-1/2 bg-white rounded-lg lg:ml-8 p-8">
+          <div className="lg:w-2/5 bg-white rounded-lg lg:ml-8 pt-12">
             <div className="flex items-center justify-between mb-4">
               <div className="border-l-2 pl-2 border-primary">
                 <p>Nintendo Switch</p>

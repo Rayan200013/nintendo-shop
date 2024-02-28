@@ -1,20 +1,21 @@
 import React from "react";
 import { images } from "../../assets/images/image";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 const SectionThree = () => {
   return (
-    <section className="bg-white py-12">
+    <section className="bg-white py-12" id="sectionThree">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Left content Start*/}
-          <div className="lg:w-1/2 mx-8 my-8 px-1 py-10 bg-rating rounded left-content">
+          <div className="lg:w-1/2 mx-8 my-8 px-1 py-10 bg-rating rounded-2xl left-content">
             <h3 className="font-sans font-bold text-xl text-heavy text-center">
               ESRB rating
             </h3>
             <Link
               to="#"
-              className="flex flex-col lg:flex-row items-center bg-white rounded my-6 mx-6 "
+              className="flex flex-col lg:flex-row items-center bg-white rounded my-6 mx-6 rounded-2xl shadow-md "
             >
               <div className="lg:w-1/4 mx-auto px-5 py-8">
                 <img src={images.stardew} alt="ESRB Rating" />
@@ -33,14 +34,14 @@ const SectionThree = () => {
           {/* Left content End*/}
 
           {/*  Right Content Start*/}
-          <div className="lg:w-1/2 mx-8 my-8 px-1 py-10 bg-rating rounded right-content">
+          <div className="lg:w-1/2 mx-8 my-8 px-1 py-10 bg-rating rounded-2xl right-content">
             <h3 className="font-sans font-bold text-xl text-heavy text-center">
               Supported play modes
             </h3>
             <div className="flex flex-col lg:flex-row justify-around  mt-3 lg:my-3 ">
               {/* First Icon */}
               <div className="flex flex-col items-center lg:items-start">
-                <div className="bg-heavy  py-6 px-14 my-4 lg:mx-4 rounded">
+                <div className="bg-heavy  py-6 px-14 my-4 lg:mx-4 rounded-2xl">
                   <i className="fa-solid fa-tv text-white"></i>
                 </div>
                 <p className="font-sans font-bold text-xl text-heavy text-center w-full">
@@ -49,7 +50,7 @@ const SectionThree = () => {
               </div>
               {/* Second Icon */}
               <div className="flex flex-col items-center lg:items-start">
-                <div className="bg-heavy  py-6 px-14 my-4 lg:mx-4 rounded">
+                <div className="bg-heavy  py-6 px-14 my-4 lg:mx-4 rounded-2xl">
                   <i className="fa-solid fa-tablet-screen-button text-white"></i>
                 </div>
                 <p className="font-sans font-bold text-xl text-heavy text-center w-full">
@@ -58,7 +59,7 @@ const SectionThree = () => {
               </div>
               {/* Third icon */}
               <div className="flex flex-col items-center lg:items-start">
-                <div className="bg-heavy  py-6 px-14 my-4 lg:mx-4 rounded">
+                <div className="bg-heavy  py-6 px-14 my-4 lg:mx-4 rounded-2xl">
                   <i className="fa-solid fa-gamepad text-white"></i>
                 </div>
                 <p className="font-sans font-bold text-xl text-heavy text-center w-full">
@@ -99,7 +100,7 @@ const SectionThree = () => {
               </h4>
             </div>
             {/* Right Side */}
-            <div className="w-full lg:w-1/2 mt-4 lg:mt-0">
+            <div className="w-full lg:w-1/2 mt-4 lg:mt-0 section-flexing">
               <Link className="font-sans font-bold text-base text-center lg:text-left mr-3 text-primary hover:text-primaryHover border-b border-primary hover:border-primaryHover">
                 Single System (1)
               </Link>
@@ -122,7 +123,7 @@ const SectionThree = () => {
               </h4>
             </div>
             {/* Right Side */}
-            <div className="w-full lg:w-1/2 mt-4 lg:mt-0">
+            <div className="w-full lg:w-1/2 mt-4 lg:mt-0 section-flexing">
               <Link className="font-sans font-bold text-base text-center lg:text-left mr-3 text-primary hover:text-primaryHover border-b border-primary hover:border-primaryHover">
                 Role-Playing
               </Link>
@@ -144,7 +145,7 @@ const SectionThree = () => {
               </h4>
             </div>
             {/* Right Side */}
-            <div className="w-full lg:w-1/2 mt-4 lg:mt-0">
+            <div className="w-full lg:w-1/2 mt-4 lg:mt-0 section-flexing">
               <Link className="font-sans font-bold text-base text-center lg:text-left mr-3 text-primary hover:text-primaryHover border-b border-primary hover:border-primaryHover">
                 ConcernedApe
               </Link>
@@ -163,7 +164,7 @@ const SectionThree = () => {
               </h4>
             </div>
             {/* Right Side */}
-            <div className="w-full lg:w-1/2 mt-4 lg:mt-0">
+            <div className="w-full lg:w-1/2 mt-4 lg:mt-0 section-flexing">
               <Link className="font-sans font-bold text-base text-center lg:text-left mr-3 text-primary hover:text-primaryHover border-b border-primary hover:border-primaryHover">
                 Everyone 10+
               </Link>

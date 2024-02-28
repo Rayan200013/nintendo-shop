@@ -89,10 +89,59 @@ module.exports = {
       animation: {
         growShrink: "growShrink 0.3s ease-in-out",
       },
+      top: {
+        // Custom top values in percentages
+        0: "0",
+        1: "1.5%",
+        2: "3%",
+        3: "4.5%",
+        6: "6%",
+        5: "7.5%",
+        9: "9%",
+        12: "12%",
+        14: "14%",
+        15: "15%",
+        18: "18%",
+        24: "24%",
+        30: "30%",
+        36: "36%",
+        48: "48%",
+        40: "60%",
+        72: "72%",
+        84: "84%",
+        96: "96%",
+        100: "100%",
+      },
+      height: {
+        700: "700px",
+      },
+      screens: {
+        mobile: "776px",
+      },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ["responsive", "group-hover", "group-focus", "group-active"],
+    },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".hidden-mobile": {
+          display: "none",
+        },
+        ".visible-mobile": {
+          display: "block",
+        },
+      };
+
+      addUtilities(newUtilities, [
+        "responsive",
+        "group-hover",
+        "group-focus",
+        "group-active",
+      ]);
+    },
+  ],
 };

@@ -12,7 +12,7 @@ const SectionTwo = () => {
   };
 
   return (
-    <section className="bg-white py-12 ">
+    <section className=" pb-12 pt-40 ">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Left Column */}

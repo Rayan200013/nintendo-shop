@@ -1,0 +1,95 @@
+/* Custom Arrows Styles */
+.custom-prev-arrow,
+.custom-next-arrow {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-prev-arrow:hover,
+.custom-next-arrow:hover {
+  background-color: #ccc;
+}
+
+#SectionOne {
+  height: 700px;
+}
+
+#SectionOne ul.slick-dots {
+  width: 100%;
+}
+
+#SectionOne ul.slick-dots li {
+  width: 100px;
+}
+#SectionOne ul.slick-dots li a img {
+  border-radius: 10px;
+}
+
+#SectionOne ul.slick-dots li a img:hover {
+  border-bottom: 3px inset red;
+  box-shadow: 0 20px 14px rgba(0, 0, 0, 0.1);
+  opacity: 0.9;
+}
+
+#SectionOne .slider-container .slick-slider .slick-arrow {
+  color: green !important;
+  background: transparent;
+  border: unset;
+  height: 50px !important;
+  width: 50px !important;
+}
+/* Define the keyframes for the pump-out animation */
+@keyframes pumpOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the arrow's ::before pseudo-element */
+#SectionOne .slider-container .slick-slider .slick-arrow::before {
+  font-size: 40px !important;
+  color: white;
+  opacity: 1; /* Make sure opacity is set to 1 for the arrow to be visible */
+  transition: transform 0.3s ease;
+}
+
+/* Add the animation on hover */
+#SectionOne .slider-container .slick-slider .slick-arrow:hover::before {
+  animation: pumpOut 0.5s ease;
+}
+
+#SectionOne .slider-container .slick-slider .slick-prev {
+  z-index: 99;
+  left: 15px;
+  color: green !important;
+  width: 100%;
+}
+
+#SectionOne .slider-container .slick-slider .slick-next {
+  right: 15px !important;
+}
+
+@media only screen and (max-width: 767px) {
+  #SectionOne ul.slick-dots li {
+    width: 35px !important ;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  #SectionOne {
+    height: auto;
+  }
+}

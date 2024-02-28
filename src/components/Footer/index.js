@@ -361,46 +361,46 @@ const Footer = () => {
       {/* Fourth Section - Image */}
 
       {/* Fifth Section - Copyright, Links, Language */}
-      <section className="bg-gray-700 py-4 lg:py-8">
-        <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center px-6 lg:px-16">
+      <section className="bg-heavy py-4 lg:py-8">
+        <div className="container mx-auto flex flex-col lg:flex-row justify-between items-center px-1 lg:px-1">
           {/* Left Paragraph */}
-          <p className="text-xxsm lg:text-sm lg:mr-8 mb-4 lg:mb-0">
+          <p className="text-xxsm lg:text-xxsm lg:mr-8 mb-4 lg:mb-0">
             © Nintendo. Games are property of their respective owners. Nintendo
             of America Inc. Headquarters are in Redmond, Washington, USA
           </p>
 
           {/* Middle Links */}
-          <div className="flex flex-col lg:flex-row lg:mr-8 text-xsm">
+          <div className="flex flex-col lg:flex-row lg:mr-8 text-xxsm">
             <Link
               to="#"
-              className="text-xxsm lg:text-sm hover:border-b hover:border-primaryHover lg:mr-6 mb-2 lg:mb-0"
+              className="text-xxsm lg:text-xxsm hover:border-b hover:border-primaryHover lg:mr-2 mb-2 lg:mb-0"
             >
               Contact Us
             </Link>
             <Link
               to="#"
-              className="text-xxsm lg:text-sm hover:text-gray-400 lg:mr-6 mb-2 lg:mb-0"
+              className="text-xxsm lg:text-xxsm hover:border-b hover:border-primaryHover lg:mr-2 mb-2 lg:mb-0"
             >
               Website Feedback
             </Link>
             <Link
               to="#"
-              className="text-xxsm lg:text-sm hover:text-gray-400 lg:mr-6 mb-2 lg:mb-0"
+              className="text-xxsm lg:text-xxsm hover:border-b hover:border-primaryHover lg:mr-2 mb-2 lg:mb-0"
             >
               Terms of Use
             </Link>
             <Link
               to="#"
-              className="text-xxsm lg:text-sm hover:text-gray-400 mb-2 lg:mb-0"
+              className="text-xxsm lg:text-xxsm hover:border-b hover:border-primaryHover lg:mr-5 mb-2 lg:mb-0"
             >
               Documents & Policies
             </Link>
-          </div>
 
-          {/* Right Logo and Language */}
-          <div className="flex items-center">
             <i className="fas fa-flag-usa mr-2"></i>
-            <Link to="#" className="text-xs lg:text-sm">
+            <Link
+              to="#"
+              className="text-xxsm lg:text-xxsm hover:border-b hover:border-white"
+            >
               English (United States)
             </Link>
           </div>

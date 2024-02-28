@@ -10,6 +10,7 @@ import nintendo from "./nintendo-switch.png";
 import consoleStation from "./console-station.png";
 import nintendoFooter from "./nintendo-footer.png";
 import esrb from "./esrb-privacy.png";
+import esrbEveryone from "./ESRB_Everyone.png";
 import card1 from "./card1.png";
 import card2 from "./card2.png";
 import card3 from "./card3.png";
@@ -32,6 +33,7 @@ import abstract3 from "./abstract3.png";
 import abstract4 from "./abstract4.jpg";
 import abstract5 from "./abstract5.jpg";
 import abstract6 from "./abstract6.jpg";
+import secreenshot1 from "./screenshot01.png";
 
 export const images = {
   logo,
@@ -46,6 +48,7 @@ export const images = {
   consoleStation,
   nintendoFooter,
   esrb,
+  esrbEveryone,
   card1,
   card2,
   card3,
@@ -68,4 +71,5 @@ export const images = {
   abstract4,
   abstract5,
   abstract6,
+  secreenshot1,
 };

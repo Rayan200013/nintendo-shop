@@ -1,0 +1,9 @@
+@media (max-width: 767px) {
+  .section-flexing {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .section-flexing a {
+    border: unset;
+  }
+}

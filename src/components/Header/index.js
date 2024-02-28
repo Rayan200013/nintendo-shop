@@ -11,6 +11,7 @@ import {
 import { images } from "../../assets/images/image";
 import { Link } from "react-router-dom";
 import Announcement from "../Announcements";
+import PrimaryNav from "../PrimaryNav";
 
 export function Header() {
   const [showCategories, setShowCategories] = useState(false);
@@ -21,9 +22,9 @@ export function Header() {
 
   return (
     <>
-      <div className="bg-white border-t border-b border-gray-200">
-        <div className="container flex items-center justify-between py-0">
-          {/* Logo */}
+      <div className="bg-white border-t border-b border-gray-200  ">
+        <div className=" flex items-center justify-between py-0">
+          {/* Left Section */}
           <div className="flex items-center">
             <Link to="#">
               <img className="h-12" src={images.logo} alt="Logo" />
@@ -98,13 +99,12 @@ export function Header() {
             </div>
           </div>
 
-          {/* this is the Secondary Menu start */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Right Section */}
+          <div className="flex items-center space-x-8 mr-2 ">
             <Link
               to="#"
-              className="flex items-center text-gray-600 hover:text-primary"
+              className="flex items-center text-gray-600 hover:text-primary hidden-mobile md:block"
             >
-              {/* <img src={questionMark} alt="Heart" className="h-6 w-6" /> */}
               <i className="fa-solid fa-circle-question h-5 w-5 text-xl"></i>
               <span className="ml-1 font-sans text-base font-bold">
                 Support
@@ -112,29 +112,26 @@ export function Header() {
             </Link>
             <Link
               to="#"
-              className="flex items-center text-gray-600 hover:text-primary"
+              className="flex items-center text-gray-600 hover:text-primary hidden-mobile md:block"
             >
-              {/* <img src={heart} alt="Heart" className="h-6 w-6" /> */}
-              <i class="fa-solid fa-heart h-5 w-5 text-xl"></i>
-              <span className="ml-1 font-sans text-base font-bold ">
+              <i className="fa-solid fa-heart h-5 w-5 text-xl"></i>
+              <span className="ml-1 font-sans text-base font-bold">
                 Wish List
               </span>
             </Link>
             <Link
               to="#"
-              className="flex items-center text-gray-600 hover:text-primary"
+              className="flex items-center text-gray-600 hover:text-primary hidden-mobile md:block"
             >
-              {/* <img src={cart} alt="Cart" className="h-6 w-6" /> */}
-              <i class="fa-solid fa-cart-shopping  h-5 w-5 text-xl"></i>
-              <span className="ml-1 font-sans text-base  font-bold">Cart</span>
+              <i className="fa-solid fa-cart-shopping h-5 w-5 text-xl"></i>
+              <span className="ml-1 font-sans text-base font-bold">Cart</span>
             </Link>
             <Link
               to="#"
-              className="flex items-center text-gray-600 hover:text-primary"
+              className="flex items-center text-gray-600 hover:text-primary hidden-mobile md:block"
             >
-              {/* <img src={user} alt="User" className="h-6 w-6" /> */}
-              <i class="fa-solid fa-user  h-5 w-5 text-xl"></i>
-              <span className="ml-1 font-sans text-base  font-bold">
+              <i className="fa-solid fa-user h-5 w-5 text-xl"></i>
+              <span className="ml-1 font-sans text-base font-bold">
                 Login / Sign Up
               </span>
             </Link>
@@ -142,20 +139,13 @@ export function Header() {
               to="#"
               className="flex items-center text-gray-600 hover:text-primary"
             >
-              <img
-                src={user}
-                alt="User"
-                className="h-6 w-6 hover:text-primary"
-              />
+              <i class="fa-solid fa-flag-usa h-6 w-6 text-primary text-xl"></i>
             </Link>
           </div>
-
-          {/* <div className="md">
-          <img src={mobile} alt="Language" className="h-6 w-6" />
-        </div> */}
-          {/* this is the Secondary Menu End */}
         </div>
       </div>
+
+      <PrimaryNav />
       <Announcement />
     </>
   );

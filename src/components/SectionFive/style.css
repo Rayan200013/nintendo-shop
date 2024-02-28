@@ -12,10 +12,12 @@
 }
 .slick-arrow:hover {
   background-color: #bcbcbc;
+  color: white;
+  border-color: #bcbcbc;
 }
 
 .slick-prev {
-  left: -4px;
+  left: -14px;
 }
 
 .slick-next {
@@ -30,7 +32,11 @@
     right: -30px;
   }
   .slick-arrow {
-    height: 430px;
+    height: 50px;
+    width: 30px;
+  }
+  .slick-arrow::before {
+    font-size: 0px !important;
   }
   .slick-dots {
     bottom: -40px !important;

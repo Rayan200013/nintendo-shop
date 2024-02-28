@@ -6,7 +6,7 @@ const Announcement = () => {
     <div className="bg-light">
       <div className="container mx-auto px-4 py-4 lg:flex lg:items-center">
         {/* First Column */}
-        <div className="lg:w-1/2 lg:flex lg:items-center">
+        <div className="lg:w-1/2 lg:flex lg:items-center hidden-mobile md:block">
           <div className="flex items-center justify-center lg:justify-end w-full">
             <i class="fa-solid fa-coins text-3xl mr-2 text-primary"></i>
             <p>
