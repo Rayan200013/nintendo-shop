@@ -42,7 +42,7 @@ export function Header() {
                 />
               </span>
 
-              <div className="absolute inset-y-0 right-0 flex items-center pr-3">
+              <div className="absolute inset-y-0 right-0 flex items-center pr-3 z-30">
                 <button
                   onClick={toggleCategories}
                   className="focus:outline-none flex items-center space-x-2 hover:text-primary"

@@ -5,10 +5,12 @@ const Card = ({ data }) => {
     <div className="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out hover:cursor-pointer h-440">
       <img className="w-full" src={data.image} alt={data.title} />
       <div className="p-4">
-        <h2 className="text-xl font-semibold mb-2 font-sans hover:text-primaryHover">
+        <h2 className="text-xl font-semibold mb-2 font-sans text-heavy font-heavy hover:text-primaryHover">
           {data.title}
         </h2>
-        <p className="text-gray-600">{data.date}</p>
+        <p className="font-sans text-heavy text-xsm font-regular">
+          {data.date}
+        </p>
         <div className="my-4">
           <p className="text-lg font-semibold">{data.space}</p>
         </div>
@@ -23,7 +25,9 @@ const Card = ({ data }) => {
 
         <div className="flex justify-between pb-3">
           <div className="flex">
-            <p className="text-lg font-semibold pr-2">{data.price}</p>
+            <p className="text-lg  pr-2 font-sans text-heavy font-bold">
+              {data.price}
+            </p>
             {data.originalPrice && (
               <p className="text-gray-500 line-through">{data.originalPrice}</p>
             )}
@@ -37,7 +41,9 @@ const Card = ({ data }) => {
 
         <div className="flex items-center justify-between mb-4">
           <div className="border-l-2 pl-2 border-primary">
-            <p>{data.text}</p>
+            <p className="font-sans text-l text-heavy font-regular">
+              {data.text}
+            </p>
           </div>
 
           <i class="fa-regular fa-heart text-xl text-primary hover:text-primaryHover hover:cursor-pointer"></i>

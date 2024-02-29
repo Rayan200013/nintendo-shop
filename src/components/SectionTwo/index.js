@@ -37,7 +37,7 @@ const SectionTwo = () => {
                   Players can
                 </p>
                 {isReadMore && (
-                  <p>
+                  <p className="font-sans font-regular text-heavy text-base line-height-snug">
                     work together to build a thriving farm, share resources, and
                     build relationships with townspeople or each other. As more
                     hands are better than one, players have the option to scale
