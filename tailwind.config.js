@@ -114,6 +114,7 @@ module.exports = {
       },
       height: {
         700: "700px",
+        440: "440px",
       },
       screens: {
         mobile: "776px",

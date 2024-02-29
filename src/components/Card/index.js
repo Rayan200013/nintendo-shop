@@ -2,10 +2,12 @@ import React from "react";
 
 const Card = ({ data }) => {
   return (
-    <div className="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out hover:cursor-pointer">
+    <div className="max-w-xs mx-auto bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out hover:cursor-pointer h-440">
       <img className="w-full" src={data.image} alt={data.title} />
       <div className="p-4">
-        <h2 className="text-xl font-semibold mb-2">{data.title}</h2>
+        <h2 className="text-xl font-semibold mb-2 font-sans hover:text-primaryHover">
+          {data.title}
+        </h2>
         <p className="text-gray-600">{data.date}</p>
         <div className="my-4">
           <p className="text-lg font-semibold">{data.space}</p>
@@ -15,7 +17,7 @@ const Card = ({ data }) => {
             {data.buttonText}
           </button>
           {data.saleEnd && (
-            <p className="text-gray-600">Sales end: {data.saleEnd} days</p>
+            <p className="text-gray-600">Sales end: {data.saleEnd} hr</p>
           )}
         </div>
 
@@ -28,7 +30,7 @@ const Card = ({ data }) => {
           </div>
           {data.salePercentage && (
             <p className="text-green-500 font-semibold">
-              {data.salePercentage}% off
+              - {data.salePercentage}%
             </p>
           )}
         </div>
